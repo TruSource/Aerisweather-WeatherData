@@ -1,0 +1,297 @@
+{
+  "components": {
+    "securitySchemes": {
+      "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": {
+        "name": "client_secret",
+        "in": "query",
+        "x-key": "",
+        "type": "apiKey"
+      },
+      "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": {
+        "name": "client_id",
+        "in": "query",
+        "x-key": "",
+        "type": "apiKey"
+      }
+    }
+  },
+  "paths": {
+    "/observations/{action}": {
+      "get": {
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "example": "55403",
+            "name": "action",
+            "required": true,
+            "in": "path"
+          }
+        ],
+        "security": [
+          {
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": [],
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": []
+          }
+        ],
+        "description": "Auto generated using TruSource",
+        "responses": {
+          "200": {
+            "description": "Auto generated using TruSource"
+          }
+        },
+        "operationId": "getObservations"
+      }
+    },
+    "/places/postalcodes/{action}": {
+      "get": {
+        "description": "Auto generated using TruSource",
+        "responses": {
+          "200": {
+            "description": "Auto generated using TruSource"
+          }
+        },
+        "operationId": "getPlacesPostalcodes",
+        "parameters": [
+          {
+            "example": "55403",
+            "name": "action",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": [],
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": []
+          }
+        ]
+      }
+    },
+    "/phrases/summary/{action}": {
+      "get": {
+        "description": "Auto generated using TruSource",
+        "responses": {
+          "200": {
+            "description": "Auto generated using TruSource"
+          }
+        },
+        "operationId": "getPhrasesSummary",
+        "parameters": [
+          {
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "example": "toronto,canada",
+            "name": "action"
+          }
+        ],
+        "security": [
+          {
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": [],
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": []
+          }
+        ]
+      }
+    },
+    "/lightning/summary/{action}": {
+      "get": {
+        "parameters": [
+          {
+            "example": "atlanta,ga",
+            "name": "action",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": [],
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": []
+          }
+        ],
+        "description": "Auto generated using TruSource",
+        "responses": {
+          "200": {
+            "description": "Auto generated using TruSource"
+          }
+        },
+        "operationId": "getLightningSummary"
+      }
+    },
+    "/countries/{action}": {
+      "get": {
+        "parameters": [
+          {
+            "example": "us",
+            "name": "action",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": [],
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": []
+          }
+        ],
+        "description": "Auto generated using TruSource",
+        "responses": {
+          "200": {
+            "description": "Auto generated using TruSource"
+          }
+        },
+        "operationId": "getCountries"
+      }
+    },
+    "/sunmoon/{action}": {
+      "get": {
+        "operationId": "getSunmoon",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "example": "minneapolis,mn",
+            "name": "action",
+            "required": true,
+            "in": "path"
+          }
+        ],
+        "security": [
+          {
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": [],
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": []
+          }
+        ],
+        "description": "Auto generated using TruSource",
+        "responses": {
+          "200": {
+            "description": "Auto generated using TruSource"
+          }
+        }
+      }
+    },
+    "/forecasts/{action}": {
+      "get": {
+        "operationId": "getForecasts",
+        "parameters": [
+          {
+            "example": "seattle,wa",
+            "name": "action",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": [],
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": []
+          }
+        ],
+        "description": "Auto generated using TruSource",
+        "responses": {
+          "200": {
+            "description": "Auto generated using TruSource"
+          }
+        }
+      }
+    },
+    "/sunmoon/moonphases/{action}": {
+      "get": {
+        "parameters": [
+          {
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "example": "minneapolis,mn",
+            "name": "action"
+          }
+        ],
+        "security": [
+          {
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": [],
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": []
+          }
+        ],
+        "description": "Auto generated using TruSource",
+        "responses": {
+          "200": {
+            "description": "Auto generated using TruSource"
+          }
+        },
+        "operationId": "getSunmoonMoonphases"
+      }
+    },
+    "/alerts/{action}": {
+      "get": {
+        "description": "Auto generated using TruSource",
+        "responses": {
+          "200": {
+            "description": "Auto generated using TruSource"
+          }
+        },
+        "operationId": "getAlerts",
+        "parameters": [
+          {
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "example": "closest",
+            "name": "action"
+          },
+          {
+            "example": "55403",
+            "name": "p",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9pZF9tbkhiVHVlcFRzRlRINGdNVXk2S1Y=": [],
+            "YXBpS2V5X3F1ZXJ5X2NsaWVudF9zZWNyZXRfMFlHeW40d3VJMENEanFtSHJCZjhNUmRuM0FPRkV0WkN6NzhrWm5PNQ==": []
+          }
+        ]
+      }
+    }
+  },
+  "info": {
+    "x-category": "weather",
+    "version": "1.0.0",
+    "contact": {
+      "url": "https://www.aerisweather.com/support/docs/api/"
+    },
+    "description": "AerisWeather's API is one of the most complete and advanced weather APIs available and quickly gives you access to many different types of weather information. Not only is AerisWeather's content easy and flexible to use, but our set of toolkits integrate with our core weather API to provide you with everything you need to get weather integrated into any of your web or mobile applications.",
+    "title": "WeatherData",
+    "x-provider": "Aerisweather"
+  },
+  "servers": [
+    {
+      "url": "https://api.aerisapi.com"
+    }
+  ],
+  "openapi": "3.0.3"
+}
